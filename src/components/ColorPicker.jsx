@@ -3,7 +3,7 @@ import React from 'react';
 import './ColorPicker.css';
 
 
-var ColorPicker = React.createClass({
+const ColorPicker = React.createClass({
     render: function() {
         return (
             <div className="custom-radios">

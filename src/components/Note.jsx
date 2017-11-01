@@ -2,9 +2,9 @@ import React from 'react';
 
 import './Note.css';
 
-var Note = React.createClass({
+const Note = React.createClass({
     render: function() {
-        var style = { backgroundColor: this.props.color };
+        let style = { backgroundColor: this.props.color };
 
         return (
             <div className="note" style={style}>

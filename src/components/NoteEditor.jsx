@@ -5,7 +5,7 @@ import ColorPicker from './ColorPicker.jsx';
 import './NoteEditor.css';
 
 
-var NoteEditor = React.createClass({
+const NoteEditor = React.createClass({
     getInitialState: function() {
         return {
             text: '',
@@ -18,7 +18,7 @@ var NoteEditor = React.createClass({
     },
 
     handleNoteAdd: function() {
-        var newNote = {
+        let newNote = {
             text: this.state.text,
             color: this.state.color,
             id: Date.now()

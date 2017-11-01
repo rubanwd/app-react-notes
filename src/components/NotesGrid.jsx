@@ -4,9 +4,9 @@ import Note from './Note.jsx';
 import './NotesGrid.css';
 
 
-var NotesGrid = React.createClass({
+const NotesGrid = React.createClass({
     componentDidMount: function() {
-        var grid = this.refs.grid;
+        let grid = this.refs.grid;
 
         this.msnry = new Masonry( grid, {
             itemSelector: '.note',
@@ -24,7 +24,7 @@ var NotesGrid = React.createClass({
     },
 
     render: function() {
-        var onNoteDelete = this.props.onNoteDelete;
+        let onNoteDelete = this.props.onNoteDelete;
 
         return (
             <div className="notes-grid" ref="grid">
